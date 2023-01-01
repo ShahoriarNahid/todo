@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:todo/services/notification_services.dart';
 import 'package:todo/services/theme_services.dart';
 import 'package:todo/ui/pages/home_page.dart';
 import 'package:todo/ui/theme.dart';
 
-
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
- // await NotifyHelper.intialize();
-//  await GetStorage.init();
+  await NotifyHelper.intialize();
+  await GetStorage.init();
   runApp(const MyApp());
 }
 

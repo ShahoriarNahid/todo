@@ -184,8 +184,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       );
-                    } else
+                    } else {
                       return Container(height: 0);
+                    }
                   }),
         ),
       ),
